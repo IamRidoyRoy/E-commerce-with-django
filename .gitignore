@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secret key
+*.secret_key
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# Environment variables
+.env
+/venv
+venv
+
+# Database
+db.sqlite3
+
+# Local development settings
+local_settings.py
+
+# Ignore migrations (for SQLite)
+**/migrations/*.py
+**/migrations/*.pyc
