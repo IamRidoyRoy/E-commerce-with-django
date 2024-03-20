@@ -10,7 +10,7 @@ from django.dispatch import receiver
 class MyUserManager(BaseUserManager):
     """ A custom manager to deal with emails with unique identifier """
 
-    def _create_user(self, email, password, **extra_fields):
+    def create_user(self, email, password, **extra_fields):
         # create and save email password
         if not email:
             raise ValueError("Please provide an email")
